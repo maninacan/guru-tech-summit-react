@@ -112,6 +112,19 @@ nx g @nx/react:lib common-components
 ? Which bundler would you like to use               None
 ```
 
+Make sure to add the path of your library to the `tailwind.config.js` file in the root of the project.  It should look something like this now:
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./apps/client/src/**/*.{html,js,ts,jsx,tsx}", "./common-components/src/**/*.{html,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
 ## How to add a utilities and types library
 
 ```bash
