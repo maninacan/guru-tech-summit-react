@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "icons:generate": "npx fontello-cli install --config fontello.config.json --css ./shared-assets/fonts/css --font ./shared-assets/fonts/font",
-    "icons:open": "npx fontello-cli open --config fontello.config.json"
+    "icons:open": "npx fontello-cli open --config fontello.config.json",
+    "start": "nx serve client"
   },
   "private": true,
   "dependencies": {
